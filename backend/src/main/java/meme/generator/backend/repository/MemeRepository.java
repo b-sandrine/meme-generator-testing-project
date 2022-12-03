@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import meme.generator.backend.model.Meme;
 
 @Repository
-public interface MemeRepository extends JpaRepository<Meme, Integer> {
+public interface MemeRepository extends JpaRepository<Meme, Integer>{
 
 }
