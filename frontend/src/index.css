@@ -1,70 +1,90 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@200;300;400;500;600&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  background-color: #E5E5E5;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  background-color: #FFFFFF;
+}
+
+nav {
+  width: 100%;
+  height: 65px;
+  background: linear-gradient(60deg, #672280 , #A626D3 );
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.nav--logo {
+  width: 50%;
+  display: flex;
+  color: #FFFFFF;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.logo--image {
+  width: 45px;
+  height: 45px;
+  padding: 5px 2px 0 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.logo--name {
+  font-size: 20px;
+  padding: 15px 0 0 0px;
+}
+
+.nav--title {
+  color: #FCFCFC;
+  padding: 23px 28px;
+  font-size: 12px;
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.container {
+  width: 70%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 15px;
+}
+form {
+  width: 100%;
+}
+.form--input {
+  height: 35px;
+  margin: 0 5px;
+  width: 230px;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+  padding-left: 4px;
+  font-size: 16px;
+}
+
+.meme--button {
+  height: 35px;
+  width: 480px;
+  border-radius: 5px;
+  border: none;
+  margin: 15px 5px;
+  color: #FFFFFF;
+  font-size: 16px;
+  background: linear-gradient(60deg, #672280 , #A626D3 );
+}
+
+.meme--image--container {
+  width: 53%;
+  margin: 5px auto;
+  text-align: center;
+}
+
+.meme--image--container img {
+  width: 100%;
+  align-items: center;
+  height: 368px;
 }
