@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="meme-table")
+@Table(name="meme_table")
 public class Meme {
 	@Id
 	private UUID id;
