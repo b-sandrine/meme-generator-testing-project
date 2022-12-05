@@ -3,6 +3,8 @@ package meme.generator.backend.model;
 import java.util.UUID;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
@@ -10,7 +12,8 @@ import jakarta.persistence.Table;
 @Table(name="meme_table")
 public class Meme {
 	@Id
-	private UUID id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
 	private String heading_text;
 	private String buttom_text;
 	private String image_url;
@@ -22,10 +25,10 @@ public class Meme {
 		this.image_url = image_url;
 	}
 	
-	public UUID getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(UUID id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getHeading_text() {
