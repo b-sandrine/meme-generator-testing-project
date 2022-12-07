@@ -1,11 +1,17 @@
 package meme.generator.backend.DBOperation;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import meme.generator.backend.model.Meme;
 import meme.generator.backend.repository.MemeRepository;
 
 @Component
-public class DBOperations {
+public class DBOperations implements CommandLineRunner {
+	
 	@Autowired
 	MemeRepository repo;
 
@@ -19,9 +25,8 @@ public class DBOperations {
 			new Meme("","","https://i.imgflip.com/43a45p.png"),
 			new Meme("","","https://i.imgflip.com/22bdq6.jpg"),
 			new Meme("","","https://i.imgflip.com/3lmzyx.jpg"),
-			new Meme("","","https://i.imgflip.com/9ehk.jpg")
+			new Meme("","","https://i.imgflip.com/9ehk.jpg"))
 		);
-		System.out.println("-------------------- All data saved --------------------")
-		)
+		System.out.println("-------------------- All data saved --------------------");
 	}
 }

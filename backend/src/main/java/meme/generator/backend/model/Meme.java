@@ -18,6 +18,11 @@ public class Meme {
 	private String buttom_text;
 	private String image_url;
 	
+	public Meme() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public Meme(String heading_text, String buttom_text, String image_url) {
 		super();
 		this.heading_text = heading_text;
