@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 export default function Navbar() {
 
     useEffect(() => {
-        fetch('api/v1')
+        fetch('api/meme/all-memes')
         .then(res => {
             res.json()
         })
