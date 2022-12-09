@@ -4,7 +4,6 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-
 @Test
 public class MemeTest {
 	Meme memeModel = new Meme("True story","This is it", "https://image/laugh");
